@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mainmenu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mainmenu_reddit_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/reddit_logo" />
+
+            <TextView
+                android:id="@+id/mainmenu_reddit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/mainmenu_reddit_logo"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorAccent"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="30dp" />
+
+
+            <RadioGroup
+                android:id="@+id/mainmenu_reddit_radioList"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mainmenu_reddit_text"
+                android:layout_marginTop="28dp">
+
+
+                <RadioButton
+                    android:id="@+id/mainmenu_radioButton_jokes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Jokes"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/mainmenu_radioButton_funny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Funny"
+                    android:textSize="20dp" />
+
+
+                <RadioButton
+                    android:id="@+id/mainmenu_radioButton_gaming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Gaming"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/mainmenu_radioButton_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="News"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/mainmenu_radioButton_technology"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Technology"
+                    android:textSize="20dp" />
+
+
+                <RadioButton
+                    android:id="@+id/mainmenu_radioButton_Gifs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="Gifs"
+                    android:textSize="20dp" />
+
+
+
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:fontFamily="casual"
+                android:id="@+id/mainmenu_button"
+                android:layout_below="@+id/mainmenu_reddit_radioList"
+                android:layout_alignParentBottom="true"
+                android:text="@string/mainmenu_button"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.widget.FrameLayout>

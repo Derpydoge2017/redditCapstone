@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:textSize="18dp"
+        android:text="Why did the chicken cross the road?"
+        android:id="@+id/detail_nameOfSubreddit"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/reddit_logo"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/detail_imageOfSubreddit"
+        android:layout_below="@id/detail_nameOfSubreddit"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Because he wanted to get to the other sideeeeeeeeeee,
+        this joke is extremely funny funny funny
+        funny funny funny funny funny
+        verry funy funny funyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+        funyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+        "
+        android:id="@+id/detail_textOfSubreddit"
+        android:layout_below="@+id/detail_imageOfSubreddit"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/detail_commentOfSubreddit"
+        android:layout_below="@+id/detail_textOfSubreddit">
+
+    </ListView>
+
+</RelativeLayout>
+</ScrollView>

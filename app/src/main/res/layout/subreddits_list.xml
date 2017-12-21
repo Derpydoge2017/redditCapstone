@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/subreddit_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        tools:text="R/Jokes"
+        android:fontFamily="monospace"
+        />
+
+    <ImageView
+        android:id="@+id/tickIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/tick_icon"
+        android:layout_marginLeft="250dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
