@@ -10,15 +10,15 @@ import java.util.List;
 
 public class RedditResponse {
 
-    @SerializedName("results")
-    private List<Reddit> results;
+    @SerializedName("children")
+    private List<Reddit> children;
 
     public List<Reddit> getResults() {
-        return results;
+        return children;
     }
 
-    public void setResults(List<Reddit> results) {
-        this.results = results;
+    public void setResults(List<Reddit> children) {
+        this.children = children;
     }
 
 }
