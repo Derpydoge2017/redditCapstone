@@ -1,5 +1,6 @@
-package com.example.admin.redditcapstone;
+package com.example.admin.redditcapstone.Data;
 
+import com.example.admin.redditcapstone.Data.Reddit;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.List;
  * Created by Admin on 12/14/17.
  */
 
-public class RedditResponse {
+public class Data {
 
     @SerializedName("children")
     private List<Reddit> children;

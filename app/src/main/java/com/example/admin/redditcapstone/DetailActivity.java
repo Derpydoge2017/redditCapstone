@@ -9,6 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.admin.redditcapstone.Data.Reddit;
+import com.example.admin.redditcapstone.Data.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,17 +34,17 @@ public class DetailActivity extends AppCompatActivity {
         ApiInterface apiService =
                 ApiClient.getClient().create(ApiInterface.class);
 
-        Call<RedditResponse> call = apiService.getSubredditPosts(subReddit, "search.json", "", "new", "1");
-        call.enqueue(new Callback<RedditResponse>() {
+        Call<Data> call = apiService.getSubredditPosts(subReddit, "search.json", "", "new", "1");
+        call.enqueue(new Callback<Data>() {
             @Override
-            public void onResponse(Call<RedditResponse>call, Response<RedditResponse> response) {
+            public void onResponse(Call<Data>call, Response<Data> response) {
                 List<Reddit> reddit_posts = response.body().getResults();
                 Log.d(TAG, "Number posts recieved: " + reddit_posts.size());
                 Toast.makeText(DetailActivity.this, "Number of posts recieved: " + reddit_posts.size(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public void onFailure(Call<RedditResponse>call, Throwable t) {
+            public void onFailure(Call<Data>call, Throwable t) {
                 // Log error here since request failed
                 Log.e(TAG, t.toString());
             }
@@ -69,17 +72,17 @@ public class DetailActivity extends AppCompatActivity {
             ApiInterface apiService =
                     ApiClient.getClient().create(ApiInterface.class);
 
-            Call<RedditResponse> call = apiService.getSubredditPosts(subReddit, "search.json", "", "new", "1");
-            call.enqueue(new Callback<RedditResponse>() {
+            Call<Data> call = apiService.getSubredditPosts(subReddit, "search.json", "", "new", "1");
+            call.enqueue(new Callback<Data>() {
                 @Override
-                public void onResponse(Call<RedditResponse>call, Response<RedditResponse> response) {
+                public void onResponse(Call<Data>call, Response<Data> response) {
                     List<Reddit> reddit_posts = response.body().getResults();
                     Log.d(TAG, "Number posts recieved: " + reddit_posts.size());
                     Toast.makeText(DetailActivity.this, "Number of posts recieved: " + reddit_posts.size(), Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
-                public void onFailure(Call<RedditResponse>call, Throwable t) {
+                public void onFailure(Call<Data>call, Throwable t) {
                     // Log error here since request failed
                     Log.e(TAG, t.toString());
                 }

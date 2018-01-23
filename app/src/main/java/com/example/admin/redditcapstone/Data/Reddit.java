@@ -1,4 +1,4 @@
-package com.example.admin.redditcapstone;
+package com.example.admin.redditcapstone.Data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.admin.redditcapstone.Data.Reddit;
+
 import java.util.List;
 
 /**
